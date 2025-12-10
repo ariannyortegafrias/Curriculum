@@ -1,0 +1,247 @@
+body {
+  display: flex;
+  overflow-x: auto;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+  margin: 0;
+  background-color: #f8f8f8;
+  padding: 40px 0;
+  font-size: 16px;
+}
+
+.contenedor {
+  flex-wrap: nowrap; 
+  position: relative;
+  overflow: visible;
+  display: flex;
+  width: 850px;
+  background-color: white;
+  box-shadow: 0 0 20px rgba(0,0,0,0.15);
+  border-radius: 10px;
+  min-height: 1400px;
+  gap: 0;
+}
+
+.columna-izquierda {
+  background-color: #EDEDED;
+  width: 320px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.foto {
+  border-radius: 15px;
+  display: block;
+  margin-top: 20px;
+  width: 240px;
+  height: auto;
+}
+
+h2 {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 
+  'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: 22px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+p, li {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 10px;
+}
+
+ul {
+  padding-left: 20px;
+  margin-top: 5px;
+  margin-bottom: 15px;
+}
+
+.zona-color-portafolio {
+  background-color: #CCD3E1;
+  width: 320px;
+  height: 150px;        
+  box-sizing: border-box; 
+  padding-top: 10px;
+}
+
+.zona-inferior {
+  background-color: #697f8f;
+  margin-top: 0px;
+  width: 850px;
+  height: 45px;        
+  box-sizing: border-box; 
+  z-index: 3;
+}
+
+.columna-derecha {
+  flex: 1;
+  background-color: white;
+  padding: 25px;
+}
+
+.columna-izquierda h2,
+.columna-izquierda p,
+.columna-izquierda li, 
+.foto1{
+  margin-left: 35px;
+}
+
+.icono {
+  width: 30px;      
+  height: 30px;
+  vertical-align: middle; 
+  color: black; 
+}
+ 
+.foto1{
+  z-index: 1;
+}
+
+.foto2 {
+  position: absolute;
+  left: -3px;
+  width: 300px;       /* ancho visible del recorte */
+  height: 350px;      
+  overflow: hidden;  
+  z-index: 0;
+}
+
+.zona-nombre {
+  position: absolute;
+  background-color: #697f8f;
+  top: 20px;
+  left: 320px;
+  width: 480px;
+  height: 240px;
+  display: flex;
+  align-items: center;
+  padding-left: 50px;
+}
+
+.zona-nombre h2{
+  font-family: 'Trebuchet MS', sans-serif;
+  color: white;
+  font-size: 42px;
+  font-weight: 2;
+  letter-spacing:0.05em;
+}
+
+.zona-inferior-nombre{
+  position: absolute;
+  background-color: #697f8f;
+  top: 270px;
+  left: 320px;
+  width: 530px;
+  height: 5px;
+  display: flex;
+}
+
+.experiencia-laboral{
+  margin-top: 280px;
+}
+
+h2.experiencia-laboral{
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 
+  'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: 25px;
+  margin-left: 50px;
+
+}
+
+.labor{
+  font-family:'Times New Roman', Times, serif;
+  font-size: 20px;
+  margin-left: 50px;
+
+}
+
+.origen {
+font-weight: 620;
+margin-left: 50px;
+
+}
+
+.experiencia-laboral li{
+  font-size: 16px;
+  margin-left: 50px;
+
+}
+
+.Educacion-superior h2{
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 
+  'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: 20px;
+
+}
+
+.ladoizq p{
+  margin-top: -20px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 
+  'Lucida Sans Unicode', Verdana, sans-serif;
+  font-size: 20px;
+  display: flex;
+  flex-direction: column;
+  line-height: 4.3;
+}
+
+.info1{
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 
+  'Lucida Sans Unicode', Verdana, sans-serif;
+  font-weight: 700;
+  position: absolute;
+  font-size: 15px;
+  margin-left: 160px;
+  margin-top: -156px;
+  z-index: 1;
+}
+
+.info2{
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 
+  'Lucida Sans Unicode', Verdana, sans-serif;
+  font-weight: 700;
+  position: absolute;
+  font-size: 15px;
+  margin-left: 160px;
+  margin-top: -67px;
+  z-index: 1;
+}
+
+.subinfo1{
+  position: absolute;
+  letter-spacing: 0.5px;
+  font-size: 13px;
+  margin-left: 160px;
+  margin-top: -110px;
+  z-index: 1;
+}
+
+.subinfo2{
+  position: absolute;
+  letter-spacing: 0.6px;
+  font-size: 13px;
+  margin-left: 160px;
+  margin-top: -22px;
+  z-index: 1;
+}
+
+.labor::before {
+  margin-left: -40px;
+  content: "■";          
+  color: #697f8f;         
+  font-size: 20px;       
+  margin-right: 35px; 
+}
+
+.linea {
+  position: absolute;
+  top: 370px;
+  left: 360px;
+  width: 3px;           
+  height: 765px;       
+  background-color: #697f8f;
+}
